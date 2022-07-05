@@ -1,0 +1,13 @@
+C:/ApliFlutter/web_etiquetas/build/windows/CMakeFiles/INSTALL.dir
+C:/ApliFlutter/web_etiquetas/build/windows/CMakeFiles/ALL_BUILD.dir
+C:/ApliFlutter/web_etiquetas/build/windows/CMakeFiles/ZERO_CHECK.dir
+C:/ApliFlutter/web_etiquetas/build/windows/flutter/CMakeFiles/flutter_wrapper_plugin.dir
+C:/ApliFlutter/web_etiquetas/build/windows/flutter/CMakeFiles/flutter_wrapper_app.dir
+C:/ApliFlutter/web_etiquetas/build/windows/flutter/CMakeFiles/flutter_assemble.dir
+C:/ApliFlutter/web_etiquetas/build/windows/flutter/CMakeFiles/INSTALL.dir
+C:/ApliFlutter/web_etiquetas/build/windows/runner/CMakeFiles/web_etiquetas.dir
+C:/ApliFlutter/web_etiquetas/build/windows/runner/CMakeFiles/INSTALL.dir
+C:/ApliFlutter/web_etiquetas/build/windows/runner/CMakeFiles/ALL_BUILD.dir
+C:/ApliFlutter/web_etiquetas/build/windows/plugins/dynamic_color/CMakeFiles/dynamic_color_plugin.dir
+C:/ApliFlutter/web_etiquetas/build/windows/plugins/dynamic_color/CMakeFiles/INSTALL.dir
+C:/ApliFlutter/web_etiquetas/build/windows/plugins/dynamic_color/CMakeFiles/ALL_BUILD.dir

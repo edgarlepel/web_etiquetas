@@ -1,0 +1,11 @@
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/icudtl.dat
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/flutter_windows.dll
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/dynamic_color_plugin.dll
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/assets/logo.png
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/NOTICES
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/ApliFlutter/web_etiquetas/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf

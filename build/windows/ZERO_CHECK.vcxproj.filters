@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\ApliFlutter\web_etiquetas\build\windows\CMakeFiles\ddd67ac5fe5ecb4cebc9b31bda70d725\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{492D5218-3A09-3F86-8FBB-BE82E6DF52AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
