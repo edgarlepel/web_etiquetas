@@ -21,7 +21,11 @@ class _EtiquetasScreenState extends State<EtiquetasScreen> {
   List<Etiqueta> _filter = [];
   List<Etiqueta> _datos = [];
   late String _fecini = '';
+  late String _feciniError = '';
+  late bool _feciniShowError = false;
   late String _fecfin = '';
+  late String _fecfinError = '';
+  late bool _fecfinShowError = false;
   bool _showLoader = false;
   String firstDate = '';
   String currentDate = '';
@@ -130,11 +134,12 @@ class _EtiquetasScreenState extends State<EtiquetasScreen> {
                   },
                 )
               ],
-              keyboardType: TextInputType.phone,
-              decoration: const InputDecoration(
+              keyboardType: TextInputType.datetime,
+              decoration: InputDecoration(
                   hintText: "ddmmaaaa",
                   labelText: 'Fecha Inicial',
-                  labelStyle: TextStyle(color: Colors.black)),
+                  errorText: _feciniShowError ? _feciniError : null,
+                  labelStyle: const TextStyle(color: Colors.black)),
               controller: TextEditingController()..text = _fecini,
               onChanged: (value) {
                 _fecini = value;
@@ -155,10 +160,11 @@ class _EtiquetasScreenState extends State<EtiquetasScreen> {
                 )
               ],
               keyboardType: TextInputType.phone,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                   hintText: "ddmmaaaa",
                   labelText: 'Fecha Final',
-                  labelStyle: TextStyle(color: Colors.black)),
+                  errorText: _fecfinShowError ? _fecfinError : null,
+                  labelStyle: const TextStyle(color: Colors.black)),
               controller: TextEditingController()..text = _fecfin,
               onChanged: (value) {
                 _fecfin = value;
@@ -266,7 +272,42 @@ class _EtiquetasScreenState extends State<EtiquetasScreen> {
     );
   }
 
+  bool _validateFields() {
+    bool isValid = true;
+    _feciniError = '';
+    _feciniShowError = false;
+    _fecfinError = '';
+    _fecfinShowError = false;
+    if (_fecini.isEmpty) {
+      isValid = false;
+      _feciniShowError = true;
+      _feciniError = 'Debes ingresar fecha';
+    } else {
+      _feciniShowError = false;
+    }
+
+    if (_fecfin.isEmpty) {
+      isValid = false;
+      _fecfinShowError = true;
+      _fecfinError = 'Debes ingresar fecha';
+    } else {
+      _feciniShowError = false;
+    }
+    if (_fecini.compareTo(_fecfin) > 0) {
+      isValid = false;
+      _fecfinShowError = true;
+      _fecfinError = 'Rango de Fecha Incorrecta';
+    }
+    //print(_fecini.compareTo(_fecfin));
+    setState(() {});
+    return isValid;
+  }
+
   Future<void> _getEtiquetas() async {
+    // Realiza validaciones...
+    if (!_validateFields()) {
+      return;
+    }
     setState(() {
       _checkerror = false;
       _showLoader = true;
